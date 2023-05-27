@@ -42,7 +42,7 @@
       </div>
       <div class="container">
         <form action='/analyze' method='post'> 
-          {% csrf_token %} 
+          {% csrf_token %} <!--Csrf Token For Authenticating Method Post In This Form--->
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Enter your text here and let Text Utils do the magic</label>
               <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="9"></textarea>
